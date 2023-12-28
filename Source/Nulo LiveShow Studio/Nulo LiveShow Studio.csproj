@@ -3,14 +3,46 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
-    <RootNamespace>Nulo_LiveShow_Studio</RootNamespace>
-    <Nullable>enable</Nullable>
+    <RootNamespace>Nulo</RootNamespace>
+    <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>Nulo LiveShow Studio</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nulo.Modules.DockPanelSuite" Version="1.0.0-alpha" />
+    <PackageReference Include="Nulo.Modules.DockPanelSuite" Version="1.0.1-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Panels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Modules\WorkspaceManager\DefaultWorkspaces.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DefaultWorkspaces.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Modules\WorkspaceManager\DefaultWorkspaces.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DefaultWorkspaces.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

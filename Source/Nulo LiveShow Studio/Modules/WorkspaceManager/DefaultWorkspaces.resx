@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Empty" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;DockPanel FormatVersion="1.0" DockLeftPortion="0.25" DockRightPortion="0.25" DockTopPortion="0.25" DockBottomPortion="0.25" ActiveDocumentPane="-1" ActivePane="-1"&gt;&lt;Contents Count="0" /&gt;&lt;Panes Count="0" /&gt;&lt;DockWindows&gt;&lt;DockWindow ID="0" DockState="Document" ZOrderIndex="1"&gt;&lt;NestedPanes Count="0" /&gt;&lt;/DockWindow&gt;&lt;DockWindow ID="1" DockState="DockLeft" ZOrderIndex="2"&gt;&lt;NestedPanes Count="0" /&gt;&lt;/DockWindow&gt;&lt;DockWindow ID="2" DockState="DockRight" ZOrderIndex="3"&gt;&lt;NestedPanes Count="0" /&gt;&lt;/DockWindow&gt;&lt;DockWindow ID="3" DockState="DockTop" ZOrderIndex="4"&gt;&lt;NestedPanes Count="0" /&gt;&lt;/DockWindow&gt;&lt;DockWindow ID="4" DockState="DockBottom" ZOrderIndex="5"&gt;&lt;NestedPanes Count="0" /&gt;&lt;/DockWindow&gt;&lt;/DockWindows&gt;&lt;FloatWindows Count="0" /&gt;&lt;/DockPanel&gt;</value>
+  </data>
 </root>

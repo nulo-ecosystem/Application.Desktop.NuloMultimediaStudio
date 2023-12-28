@@ -1,14 +1,21 @@
-namespace Nulo_LiveShow_Studio {
+using Nulo.Modules.DockPanelSuite.WorkspaceManager;
+using Nulo.Modules.WorkspaceManager;
+using System;
+using System.Windows.Forms;
+
+namespace Nulo {
+
     internal static class Program {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+
+        public static WorkspaceManager<WorkspaceTheme, WorkspaceData> WorkspaceManager;
+
         [STAThread]
         static void Main() {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            WorkspaceManager = new WorkspaceManager<WorkspaceTheme, WorkspaceData>();
+
+            Application.Run(new Pages.MainPage());
         }
     }
 }
