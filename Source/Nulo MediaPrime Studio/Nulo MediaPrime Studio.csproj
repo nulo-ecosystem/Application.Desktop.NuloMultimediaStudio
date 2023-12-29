@@ -7,15 +7,17 @@
     <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>disable</ImplicitUsings>
-    <AssemblyName>Nulo LiveShow Studio</AssemblyName>
+    <AssemblyName>Nulo MediaPrime Studio 2024</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nulo.Modules.DockPanelSuite" Version="1.0.1-alpha" />
+    <Compile Remove="Panels\**" />
+    <EmbeddedResource Remove="Panels\**" />
+    <None Remove="Panels\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Panels\" />
+    <PackageReference Include="Nulo.Modules.DockPanelSuite" Version="1.0.1-alpha" />
   </ItemGroup>
 
   <ItemGroup>

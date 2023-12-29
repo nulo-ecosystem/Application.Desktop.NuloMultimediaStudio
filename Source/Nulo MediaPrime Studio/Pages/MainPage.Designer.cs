@@ -87,7 +87,7 @@
             MinimumSize = new System.Drawing.Size(1080, 720);
             Name = "MainPage";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Nulo LiveShow Studio";
+            Text = "Nulo MediaPrime Studio 2024";
             WindowState = System.Windows.Forms.FormWindowState.Maximized;
             FormClosing += MainPage_FormClosing;
             ToolStrip.ResumeLayout(false);
