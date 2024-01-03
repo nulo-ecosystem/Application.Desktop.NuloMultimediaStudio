@@ -1,56 +1,52 @@
-﻿using Nulo.Modules.DockPanelSuite.Docking;
-using Nulo.Modules.DockPanelSuite.WorkspaceManager;
-using System;
-using System.Collections.Generic;
+﻿using Nulo.Modules.WorkspaceManager.Docking;
 
 namespace Nulo.Modules.WorkspaceManager {
 
     public class WorkspaceData : IWorkspaceData {
 
         #region Current Workspace
+
         public string LoadCurrentWorkspace() {
             return Properties.Settings.Default.Workspace;
         }
+
         public void SaveCurrentWorkspace(string content) {
             Properties.Settings.Default.Workspace = content;
             Properties.Settings.Default.Save();
         }
-        #endregion
+
+        #endregion Current Workspace
 
         #region Default Workspaces
-        public List<DefaultWorkspace> LoadAllDefaultWorkspaces() => [
-            //new DefaultWorkspace("Default", nameof(DefaultWorkspaces.Default))
-        ];
+
+        public List<DefaultWorkspace> LoadAllDefaultWorkspaces() => [];
+
         public string LoadDefaultWorkspace(string key = null) {
             switch(key) {
-                //case nameof(DefaultWorkspaces.Default): { return DefaultWorkspaces.Default; }
                 default: { return DefaultWorkspaces.Empty; }
             }
         }
-        #endregion
+
+        #endregion Default Workspaces
 
         #region User Workspaces
+
         public List<string> LoadAllUserWorkspaces() {
             var userWorkspaces = Properties.Settings.Default.UserWorkspaces;
-
             if(userWorkspaces is null) {
-                userWorkspaces = [];
-                Properties.Settings.Default.UserWorkspaces = userWorkspaces;
+                Properties.Settings.Default.UserWorkspaces = userWorkspaces = [];
                 Properties.Settings.Default.Save();
             }
-
             List<string> list = [];
             foreach(var workspace in userWorkspaces) { list.Add(workspace.Key); }
             return list;
         }
+
         public string LoadUserWorkspace(string key = null) {
             var userWorkspaces = Properties.Settings.Default.UserWorkspaces;
             foreach(var workspace in userWorkspaces) {
-                if(workspace.Key.Equals(key)) {
-                    return workspace.Content;
-                }
+                if(workspace.Key.Equals(key)) { return workspace.Content; }
             }
-
             return null;
         }
 
@@ -65,11 +61,12 @@ namespace Nulo.Modules.WorkspaceManager {
                 return false;
             }
         }
-        public bool RemoveUserWorkspace(UserWorkspace workspace) {
+
+        public bool DeleteUserWorkspace(UserWorkspace workspace) {
             var userWorkspaces = Properties.Settings.Default.UserWorkspaces;
-            foreach(var _workspace in userWorkspaces) {
-                if(_workspace.Key.Equals(workspace.Key)) {
-                    userWorkspaces.Remove(_workspace);
+            foreach(var userWorkspace in userWorkspaces) {
+                if(userWorkspace.Key.Equals(workspace.Key)) {
+                    userWorkspaces.Remove(userWorkspace);
                     Properties.Settings.Default.UserWorkspaces = userWorkspaces;
                     Properties.Settings.Default.Save();
                     return true;
@@ -77,7 +74,10 @@ namespace Nulo.Modules.WorkspaceManager {
             }
             return false;
         }
-        #endregion
+
+        #endregion User Workspaces
+
+        public Texts GetTexts() => null;
 
         public IDockContent GetInstanceByPanelType(string fullName) {
             try {

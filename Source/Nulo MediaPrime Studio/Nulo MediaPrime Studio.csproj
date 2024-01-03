@@ -6,7 +6,7 @@
     <RootNamespace>Nulo</RootNamespace>
     <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>disable</ImplicitUsings>
+    <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>Nulo MediaPrime Studio 2024</AssemblyName>
   </PropertyGroup>
 
@@ -17,7 +17,35 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nulo.Modules.DockPanelSuite" Version="1.0.1-alpha" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\Dockindicator_PaneDiamond_Hotspot.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\DockIndicator_PaneDiamond_HotspotIndex.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskArrowBottom.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskArrowLeft.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskArrowRight.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskArrowTop.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskCoreBottom.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskCoreCenter.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskCoreLeft.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskCoreRight.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskCoreTop.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskDock.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskDockFive.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskTabClose.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskTabList.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskTabOverflow.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskToolWindowAutoHide.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskToolWindowClose.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskToolWindowDock.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskToolWindowOption.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskWindowBottom.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskWindowCenter.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskWindowLeft.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskWindowRight.png" />
+    <Content Remove="C:\Users\Kastney\.nuget\packages\nulo.modules.workspacemanager\1.0.2-alpha\contentFiles\any\net8.0-windows7.0\Themes\Default\Resources\MaskWindowTop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nulo.Modules.WorkspaceManager" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +53,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>DefaultWorkspaces.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -37,6 +70,10 @@
     <EmbeddedResource Update="Modules\WorkspaceManager\DefaultWorkspaces.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>DefaultWorkspaces.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

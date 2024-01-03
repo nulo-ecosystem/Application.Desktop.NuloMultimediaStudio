@@ -1,5 +1,4 @@
-﻿using Nulo.Modules.DockPanelSuite.Docking;
-using Nulo.Modules.DockPanelSuite.WorkspaceManager;
+﻿using Nulo.Modules.WorkspaceManager.Docking;
 
 namespace Nulo.Modules.WorkspaceManager {
 
@@ -10,15 +9,15 @@ namespace Nulo.Modules.WorkspaceManager {
             key ??= Properties.Settings.Default.Theme;
 
             switch(key) {
-                case "light": {
-                    Properties.Settings.Default.Theme = "light";
-                    Properties.Settings.Default.Save();
-                    return new LightTheme();
-                }
-                default: {
+                case "dark": {
                     Properties.Settings.Default.Theme = "dark";
                     Properties.Settings.Default.Save();
                     return new DarkTheme();
+                }
+                default: {
+                    Properties.Settings.Default.Theme = "light";
+                    Properties.Settings.Default.Save();
+                    return new LightTheme();
                 }
             }
         }
