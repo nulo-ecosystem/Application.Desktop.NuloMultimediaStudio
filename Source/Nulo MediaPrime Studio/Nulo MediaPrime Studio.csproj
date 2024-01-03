@@ -45,6 +45,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Nulo.Modules.MultiLanguageManager" Version="0.0.1-alpha" />
     <PackageReference Include="Nulo.Modules.WorkspaceManager" Version="1.1.0" />
   </ItemGroup>
 
