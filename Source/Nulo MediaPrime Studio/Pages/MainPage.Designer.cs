@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             DockPanel = new Panel();
             MenuStrip = new MenuStrip();
             MenuStripWindow = new ToolStripMenuItem();
@@ -41,7 +42,7 @@
             DockPanel.Dock = DockStyle.Fill;
             DockPanel.Location = new Point(0, 39);
             DockPanel.Name = "DockPanel";
-            DockPanel.Size = new Size(1058, 597);
+            DockPanel.Size = new Size(1058, 603);
             DockPanel.TabIndex = 0;
             // 
             // MenuStrip
@@ -92,9 +93,9 @@
             // StatusStrip
             // 
             StatusStrip.ImageScalingSize = new Size(24, 24);
-            StatusStrip.Location = new Point(0, 636);
+            StatusStrip.Location = new Point(0, 642);
             StatusStrip.Name = "StatusStrip";
-            StatusStrip.Size = new Size(1058, 28);
+            StatusStrip.Size = new Size(1058, 22);
             StatusStrip.TabIndex = 0;
             // 
             // TopPanel
@@ -115,6 +116,7 @@
             Controls.Add(DockPanel);
             Controls.Add(TopPanel);
             Controls.Add(StatusStrip);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = MenuStrip;
             MinimumSize = new Size(1080, 720);
             Name = "MainPage";

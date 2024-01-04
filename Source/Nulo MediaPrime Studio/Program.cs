@@ -13,8 +13,8 @@ namespace Nulo {
 
             ///Inicia a tela SplashScreen
             //Abre o formulário de apresentação
-            var splashScreen = new SplashScreen();
-            splashScreen.Show();
+            var splash = new SplashScreen();
+            splash.Show();
             //Atualizar tela.
             Application.DoEvents();
             Thread.Sleep(5000);
@@ -22,7 +22,7 @@ namespace Nulo {
             WorkspaceManager = new WorkspaceManager<WorkspaceTheme, WorkspaceData>();
 
             ///Finaliza a tela SplashScreen
-            splashScreen.Dispose();
+            splash.Dispose();
 
             Application.Run(new MainPage());
         }

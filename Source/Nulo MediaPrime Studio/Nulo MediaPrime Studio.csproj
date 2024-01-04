@@ -8,6 +8,12 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>Nulo MediaPrime Studio 2024</AssemblyName>
+    <Version>2024.1.0</Version>
+    <Copyright>Copyright © 2024 Nulo Ecosystem</Copyright>
+    <Product>Nulo MediaPrime Studio®</Product>
+    <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+    <StartupObject>Nulo.Program</StartupObject>
+    <PackageIcon></PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -45,7 +51,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nulo.Modules.MultiLanguageManager" Version="0.0.1-alpha" />
+    <Content Include="Resources\Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nulo.Modules.MultiLanguageManager" Version="1.0.1" />
     <PackageReference Include="Nulo.Modules.WorkspaceManager" Version="1.1.0" />
   </ItemGroup>
 
