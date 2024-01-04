@@ -2,7 +2,7 @@
 
 namespace Nulo.Modules.WorkspaceManager {
 
-    public class WorkspaceTheme : IWorkspaceTheme {
+    internal class WorkspaceTheme : IWorkspaceTheme {
 
         public ThemeBase GetTheme(string key = null) {
             if(Properties.Settings.Default.Theme.Equals(key)) { return null; }

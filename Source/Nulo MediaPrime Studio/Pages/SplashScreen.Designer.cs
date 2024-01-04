@@ -193,12 +193,12 @@
         private PictureBox SplashImage;
         private TableLayoutPanel ContentPanel;
         private Panel SmallBarPanel;
-        private Label StatusLabel;
         private Panel ApplicationPanel;
         private Label NameLabel;
         private PictureBox LogoImage;
         private Label CopyrighLabel;
         private Label VersionLabel;
         private Panel LogoPanel;
+        public Label StatusLabel;
     }
 }

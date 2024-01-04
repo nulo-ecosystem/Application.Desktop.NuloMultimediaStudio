@@ -2,7 +2,7 @@
 
 namespace Nulo.Modules.WorkspaceManager {
 
-    public class WorkspaceData : IWorkspaceData {
+    internal class WorkspaceData : IWorkspaceData {
 
         #region Current Workspace
 
