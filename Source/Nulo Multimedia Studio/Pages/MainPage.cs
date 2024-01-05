@@ -31,7 +31,7 @@ namespace Nulo.Pages {
         private void MultiLanguageManager_SwitchLanguage() {
             MenuStripWindow.Text = Program.MultiLanguageManager.GetText("MenuWindow");
             MenuStripWindowWorkspaces.Text = Program.MultiLanguageManager.GetText("MenuWindowWorkspaces");
-            Program.WorkspaceManager.UpdateTexts();
+            Program.WorkspaceManager.TextsUpdate();
         }
     }
 }
