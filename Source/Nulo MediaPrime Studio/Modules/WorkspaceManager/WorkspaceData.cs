@@ -77,7 +77,23 @@ namespace Nulo.Modules.WorkspaceManager {
 
         #endregion User Workspaces
 
-        public Texts GetTexts() => null;
+        public Texts GetTexts() {
+            return new Texts {
+                SaveMenuItem = Program.MultiLanguageManager.GetText("MenuWindowWorkspacesSave"),
+                DeleteMenuItem = Program.MultiLanguageManager.GetText("MenuWindowWorkspacesDelete"),
+
+                NewWorkspaceTitle = Program.MultiLanguageManager.GetText("Dialog_NewWorkspace_Title"),
+                NewWorkspaceName = Program.MultiLanguageManager.GetText("Dialog_NewWorkspace_Name"),
+                NewWorkspaceMessageErrorDuplicate = Program.MultiLanguageManager.GetText("Dialog_NewWorkspace_ErrorDuplicate"),
+                NewWorkspaceMessageErrorInvalidCharacter = Program.MultiLanguageManager.GetText("Dialog_NewWorkspace_InvalidCharacter"),
+
+                DeleteWorkspaceTitle = Program.MultiLanguageManager.GetText("Dialog_DeleteWorkspace_Title"),
+                DeleteWorkspaceSelect = Program.MultiLanguageManager.GetText("Dialog_DeleteWorkspace_Select"),
+
+                CommandSave = Program.MultiLanguageManager.GetText("CommandSave"),
+                CommandDelete = Program.MultiLanguageManager.GetText("CommandDelete")
+            };
+        }
 
         public IDockContent GetInstanceByPanelType(string fullName) {
             try {

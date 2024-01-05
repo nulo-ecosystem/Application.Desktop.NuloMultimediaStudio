@@ -117,7 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CommandDelete" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="CommandSave" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Dialog_DeleteWorkspace_Select" xml:space="preserve">
+    <value>Selecione</value>
+  </data>
+  <data name="Dialog_DeleteWorkspace_Title" xml:space="preserve">
+    <value>Excluir espaço de trabalho</value>
+  </data>
+  <data name="Dialog_NewWorkspace_ErrorDuplicate" xml:space="preserve">
+    <value>O nome já existe! Tente outro nome.</value>
+  </data>
+  <data name="Dialog_NewWorkspace_InvalidCharacter" xml:space="preserve">
+    <value>Caracteres inválidos! Evite usar</value>
+  </data>
+  <data name="Dialog_NewWorkspace_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Dialog_NewWorkspace_Title" xml:space="preserve">
+    <value>Novo espaço de trabalho</value>
+  </data>
+  <data name="MenuWindow" xml:space="preserve">
+    <value>Janela</value>
+  </data>
+  <data name="MenuWindowWorkspaces" xml:space="preserve">
+    <value>Espaços de trabalho</value>
+  </data>
+  <data name="MenuWindowWorkspacesDelete" xml:space="preserve">
+    <value>Excluir um espaço de trabalho...</value>
+  </data>
+  <data name="MenuWindowWorkspacesSave" xml:space="preserve">
+    <value>Salvar como Novo espaço de trabalho...</value>
+  </data>
   <data name="Pages_SplashScreen_WorkspaceManager" xml:space="preserve">
-    <value>oi pt</value>
+    <value>Iniciando espaços de trabalho...</value>
   </data>
 </root>

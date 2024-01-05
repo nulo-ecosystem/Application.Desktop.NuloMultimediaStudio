@@ -117,7 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CommandDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CommandSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Dialog_DeleteWorkspace_Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Dialog_DeleteWorkspace_Title" xml:space="preserve">
+    <value>Delete workspace</value>
+  </data>
+  <data name="Dialog_NewWorkspace_ErrorDuplicate" xml:space="preserve">
+    <value>Name already exists! Try another name.</value>
+  </data>
+  <data name="Dialog_NewWorkspace_InvalidCharacter" xml:space="preserve">
+    <value>Invalid characters! Avoid using</value>
+  </data>
+  <data name="Dialog_NewWorkspace_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Dialog_NewWorkspace_Title" xml:space="preserve">
+    <value>New workspace</value>
+  </data>
+  <data name="MenuWindow" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="MenuWindowWorkspaces" xml:space="preserve">
+    <value>Workspaces</value>
+  </data>
+  <data name="MenuWindowWorkspacesDelete" xml:space="preserve">
+    <value>Delete a workspace...</value>
+  </data>
+  <data name="MenuWindowWorkspacesSave" xml:space="preserve">
+    <value>Save as New workspace...</value>
+  </data>
   <data name="Pages_SplashScreen_WorkspaceManager" xml:space="preserve">
-    <value>hi en</value>
+    <value>Starting workspaces...</value>
   </data>
 </root>

@@ -18,7 +18,7 @@ namespace Nulo {
             var splash = new SplashScreen();
             splash.Show();
             Application.DoEvents();
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
 
             #region Multi-Language Manager
 

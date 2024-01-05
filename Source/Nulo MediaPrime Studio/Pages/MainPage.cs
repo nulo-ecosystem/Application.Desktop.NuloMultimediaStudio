@@ -12,7 +12,8 @@ namespace Nulo.Pages {
             Program.WorkspaceManager.SetMenuStripWorkspaces(MenuStripWindow, MenuStripWindowWorkspaces);
             Program.WorkspaceManager.Init();
 
-            Program.WorkspaceManager.UpdateTexts();
+            Program.MultiLanguageManager.SwitchLanguage += MultiLanguageManager_SwitchLanguage;
+            Program.MultiLanguageManager.Update();
         }
 
         private void MainPage_FormClosing(object sender, FormClosingEventArgs e) {
@@ -25,6 +26,12 @@ namespace Nulo.Pages {
             style.SetStyle(MenuStrip);
             style.SetStyle(ToolStrip);
             style.SetStyle(StatusStrip);
+        }
+
+        private void MultiLanguageManager_SwitchLanguage() {
+            MenuStripWindow.Text = Program.MultiLanguageManager.GetText("MenuWindow");
+            MenuStripWindowWorkspaces.Text = Program.MultiLanguageManager.GetText("MenuWindowWorkspaces");
+            Program.WorkspaceManager.UpdateTexts();
         }
     }
 }
