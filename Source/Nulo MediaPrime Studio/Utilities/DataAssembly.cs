@@ -26,7 +26,7 @@ namespace Nulo.Utilities {
         }
 
         public static string GetProductName() {
-            return GetInfo() is FileVersionInfo info ? info.ProductName : string.Empty;
+            return GetInfo() is FileVersionInfo info ? info.ProductName.Replace(" ®", "®") : string.Empty;
         }
     }
 }

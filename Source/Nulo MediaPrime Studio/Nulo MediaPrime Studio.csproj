@@ -10,10 +10,30 @@
     <AssemblyName>Nulo MediaPrime Studio 2024</AssemblyName>
     <Version>2024.1.0</Version>
     <Copyright>Copyright © 2024 Nulo Ecosystem</Copyright>
-    <Product>Nulo MediaPrime Studio®</Product>
+    <Product>Nulo MediaPrime Studio ®</Product>
     <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
     <StartupObject>Nulo.Program</StartupObject>
     <PackageIcon></PackageIcon>
+    <Authors>kastney</Authors>
+    <Company>Nulo Ecosystem</Company>
+    <Description></Description>
+    <PackageId>$(AssemblyName)</PackageId>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <ErrorReport>none</ErrorReport>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <WarningLevel>0</WarningLevel>
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <WarningLevel>0</WarningLevel>
+    <Deterministic>False</Deterministic>
   </PropertyGroup>
 
   <ItemGroup>
