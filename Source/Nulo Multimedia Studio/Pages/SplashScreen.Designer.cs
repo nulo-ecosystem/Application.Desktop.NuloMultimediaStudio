@@ -62,13 +62,13 @@
             ContentPanel.Controls.Add(StatusLabel, 1, 0);
             ContentPanel.Controls.Add(ApplicationPanel, 0, 0);
             ContentPanel.Dock = DockStyle.Bottom;
-            ContentPanel.Location = new Point(0, 525);
+            ContentPanel.Location = new Point(0, 523);
             ContentPanel.Name = "ContentPanel";
             ContentPanel.Padding = new Padding(0, 0, 0, 10);
             ContentPanel.RowCount = 2;
             ContentPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             ContentPanel.RowStyles.Add(new RowStyle());
-            ContentPanel.Size = new Size(1080, 195);
+            ContentPanel.Size = new Size(1080, 197);
             ContentPanel.TabIndex = 1;
             // 
             // CopyrighLabel
@@ -76,7 +76,7 @@
             CopyrighLabel.AutoSize = true;
             CopyrighLabel.Dock = DockStyle.Fill;
             CopyrighLabel.ForeColor = SystemColors.GrayText;
-            CopyrighLabel.Location = new Point(3, 137);
+            CopyrighLabel.Location = new Point(3, 139);
             CopyrighLabel.Name = "CopyrighLabel";
             CopyrighLabel.Padding = new Padding(25, 0, 0, 0);
             CopyrighLabel.Size = new Size(750, 48);
@@ -89,7 +89,7 @@
             VersionLabel.Dock = DockStyle.Fill;
             VersionLabel.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             VersionLabel.ForeColor = Color.White;
-            VersionLabel.Location = new Point(759, 137);
+            VersionLabel.Location = new Point(759, 139);
             VersionLabel.Name = "VersionLabel";
             VersionLabel.Padding = new Padding(0, 0, 20, 10);
             VersionLabel.Size = new Size(318, 48);
@@ -103,9 +103,8 @@
             StatusLabel.Location = new Point(759, 0);
             StatusLabel.Name = "StatusLabel";
             StatusLabel.Padding = new Padding(0, 8, 24, 0);
-            StatusLabel.Size = new Size(318, 137);
+            StatusLabel.Size = new Size(318, 139);
             StatusLabel.TabIndex = 2;
-            StatusLabel.TextAlign = ContentAlignment.TopRight;
             // 
             // ApplicationPanel
             // 
@@ -114,7 +113,7 @@
             ApplicationPanel.Dock = DockStyle.Fill;
             ApplicationPanel.Location = new Point(3, 3);
             ApplicationPanel.Name = "ApplicationPanel";
-            ApplicationPanel.Size = new Size(750, 131);
+            ApplicationPanel.Size = new Size(750, 133);
             ApplicationPanel.TabIndex = 3;
             // 
             // NameLabel
@@ -124,7 +123,7 @@
             NameLabel.ForeColor = Color.White;
             NameLabel.Location = new Point(120, 0);
             NameLabel.Name = "NameLabel";
-            NameLabel.Size = new Size(630, 131);
+            NameLabel.Size = new Size(630, 133);
             NameLabel.TabIndex = 1;
             NameLabel.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -135,7 +134,7 @@
             LogoPanel.Location = new Point(0, 0);
             LogoPanel.Name = "LogoPanel";
             LogoPanel.Padding = new Padding(10, 20, 0, 20);
-            LogoPanel.Size = new Size(120, 131);
+            LogoPanel.Size = new Size(120, 133);
             LogoPanel.TabIndex = 2;
             // 
             // LogoImage
@@ -144,18 +143,18 @@
             LogoImage.Image = Properties.Resources.Icon;
             LogoImage.Location = new Point(13, 23);
             LogoImage.Name = "LogoImage";
-            LogoImage.Size = new Size(107, 85);
+            LogoImage.Size = new Size(107, 87);
             LogoImage.SizeMode = PictureBoxSizeMode.Zoom;
             LogoImage.TabIndex = 0;
             LogoImage.TabStop = false;
             // 
             // SmallBarPanel
             // 
-            SmallBarPanel.BackColor = Color.FromArgb(4, 92, 170);
+            SmallBarPanel.BackColor = Color.FromArgb(33, 154, 202);
             SmallBarPanel.Dock = DockStyle.Bottom;
             SmallBarPanel.Location = new Point(0, 520);
             SmallBarPanel.Name = "SmallBarPanel";
-            SmallBarPanel.Size = new Size(1080, 5);
+            SmallBarPanel.Size = new Size(1080, 3);
             SmallBarPanel.TabIndex = 2;
             // 
             // SplashScreen
