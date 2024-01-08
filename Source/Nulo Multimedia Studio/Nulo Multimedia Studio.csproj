@@ -20,6 +20,7 @@
     <PackageId>$(AssemblyName)</PackageId>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <ErrorReport>none</ErrorReport>
+    <IsPublishable>False</IsPublishable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
