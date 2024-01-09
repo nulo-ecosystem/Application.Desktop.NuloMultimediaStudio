@@ -64,7 +64,7 @@
             // 
             // MenuStripWindowWorkspaces
             // 
-            MenuStripWindowWorkspaces.Image = Properties.Resources.icon_workspaces;
+            MenuStripWindowWorkspaces.Image = Properties.Resources.IconWorkspaces;
             MenuStripWindowWorkspaces.Name = "MenuStripWindowWorkspaces";
             MenuStripWindowWorkspaces.Size = new Size(209, 34);
             MenuStripWindowWorkspaces.Text = "Workspaces";
@@ -85,7 +85,7 @@
             // 
             ToolStripWorkspaces.Alignment = ToolStripItemAlignment.Right;
             ToolStripWorkspaces.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            ToolStripWorkspaces.Image = Properties.Resources.icon_workspaces;
+            ToolStripWorkspaces.Image = Properties.Resources.IconWorkspaces;
             ToolStripWorkspaces.ImageTransparentColor = Color.Magenta;
             ToolStripWorkspaces.Name = "ToolStripWorkspaces";
             ToolStripWorkspaces.Size = new Size(42, 34);
