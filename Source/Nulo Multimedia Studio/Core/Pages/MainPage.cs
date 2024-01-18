@@ -4,8 +4,10 @@ namespace Nulo.Core.Pages {
 
     public partial class MainPage : Form {
 
-        public MainPage() {
+        public MainPage(ToolStripItem[] menuItems) {
             InitializeComponent();
+            MenuStrip.Items.AddRange(menuItems);
+
             DockPanel.Controls.Add(Program.WorkspaceManager.DockPanel);
             Program.WorkspaceManager.Style = WorkspaceManager_Style;
             Program.WorkspaceManager.SetToolStripWorkspaces(ToolStripWorkspaces);
